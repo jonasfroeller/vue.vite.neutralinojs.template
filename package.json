@@ -4,6 +4,7 @@
   "type": "module",
   "description": "Starter template for Neutralino.js with Vite.js and Vue.js",
   "scripts": {
+    "postinstall": "neu update",
     "dev": "vite build && neu run",
     "build": "vue-tsc -b && vite build && neu build --release",
     "preview": "vite preview"
@@ -19,6 +20,7 @@
     "@vitejs/plugin-vue": "^6.0.3",
     "typescript": "~5.9.3",
     "vite": "^7.3.0",
+    "vite-plugin-static-copy": "^3.1.4",
     "vue-tsc": "^3.2.1"
   }
 }

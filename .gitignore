@@ -13,3 +13,4 @@ resources
 
 # temporary files
 .tmp
+*.tsbuildinfo

@@ -7,6 +7,7 @@
   "url": "/",
   "enableServer": true,
   "enableNativeAPI": true,
+  "tokenSecurity": "one-time",
   "logging": {
     "enabled": true,
     "writeToLogFile": false
@@ -27,7 +28,7 @@
       "fullScreen": false,
       "alwaysOnTop": false,
       "icon": "/files/icons/icon.png",
-      "enableInspector": true,
+      "enableInspector": false,
       "borderless": false,
       "maximize": false,
       "exitProcessOnClose": true,
@@ -42,7 +43,7 @@
     "resourcesPath": "/dist/",
     "extensionsPath": "/extensions/",
     "clientLibrary": "/dist/neutralino.js",
-    "binaryVersion": "5.4.0",
-    "clientVersion": "5.4.0"
+    "binaryVersion": "6.4.0",
+    "clientVersion": "6.4.0"
   }
 }

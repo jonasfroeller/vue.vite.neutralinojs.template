@@ -79,6 +79,7 @@ Your app binaries will be in the `dist/` folder.
 - No bundled runtime – uses Edge WebView2 on Windows
 - Zero compile step – just JS bundling, no Rust/Go
 - Instant startup – native webview loads directly
+- **True cross-platform builds** – builds for Windows, macOS, and Linux from any OS (no cross-compilation needed!)
 
 **Trade-offs:**
 - Less native API coverage than Tauri
