@@ -1,21 +1,24 @@
 {
-  "name": "vite-neutralinojs-template",
-  "version": "1.0.2",
-  "description": "Starter template for Neutralino.js with Vite.js",
+  "name": "vue-neutralinojs-template",
+  "version": "2.0.0",
+  "type": "module",
+  "description": "Starter template for Neutralino.js with Vite.js and Vue.js",
   "scripts": {
-    "serve": "vite",
-    "serve:neu": "vite build && neu run",
-    "build": "vite build && neu build --release",
-    "lint": "exit 0;"
+    "dev": "vite build && neu run",
+    "build": "vue-tsc -b && vite build && neu build --release",
+    "preview": "vite preview"
   },
-  "author": "Yoones Khoshghadam <yooneskh@gmail.com>",
+  "author": "Jonas Fröller",
   "license": "ISC",
   "dependencies": {
-    "@neutralinojs/neu": "7.0.1",
-    "vue": "3.2.21"
+    "@neutralinojs/lib": "^5.4.0",
+    "vue": "^3.5.13"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "1.9.4",
-    "vite": "2.6.14"
+    "@neutralinojs/neu": "^11.6.0",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "typescript": "~5.7.2",
+    "vite": "^6.0.5",
+    "vue-tsc": "^2.2.0"
   }
 }

@@ -1,35 +1,75 @@
 # Neutralino.js Template With Vite.js and Vue.js
 
-## Neutralino.js
-[Neutralino.js](https://github.com/neutralinojs/neutralinojs) is a new competitor to Electron.js which is smaller and consumes tiny amount of ram.
+A modern starter template combining Neutralino.js, Vite, and Vue 3 with TypeScript support.
 
-## Vite.js
-[Vite.js](https://vitejs.dev/) is the new generation of build tools which loads up extremely fast and provides a lot out of the box.
+## Technologies
 
-## Vue.js
-[Vue.js](https://vuejs.org/) is one of the newest javascript frameworks with extremely lean leanring curve and very fun to work with. Has become exceptionally better in version 3. This template uses [Vue.js version 3](https://v3.vuejs.org/)
+- **[Neutralino.js](https://neutralino.js.org/)**   - Lightweight desktop app framework, alternative to Electron
+- **[Vite](https://vitejs.dev/)**                   - Next-generation frontend tooling with instant HMR
+- **[Vue 3](https://vuejs.org/)**                   - Progressive JavaScript framework with Composition API
 
-This template brings all these together and gives you the starting point to make top notch desktop apps.
+## Requirements
+
+- **Node.js 18+**                                   - (required for Vite 6)
+- **npm** or **yarn**                               - (package manager)
 
 ## Installation
 
-- Clone this repository
-- `cd` into the directory
-- `yarn`
-- `npx neu update`
-- change these things according to your app
-  - `name` and `description` in `package.json`
-  - `applicationId`, `modes.window.title` and `cli.binaryName` in `neutralino.config.js`
-  - `title` tag in `index.html`
-  - `public/favicon.ico`
-  - `public/icons/appIcon.png`
+```bash
+# Clone the repository
+git clone https://github.com/jonasfroeller/vue.vite.neutralinojs.template.git
+cd vue.vite.neutralinojs.template
 
-## Usage
-- `yarn serve` starts the dev server of vite in `8080` port. (you can change it in the `vite.config.js`)
-- develop your application in `src`
-- `yarn serve:neu` builds your app and opens it in the `neu` window.
-- after you are done, `yarn build` build the js app and packages it with `neu`
-- your app binaries are at `dist`
+# Install dependencies
+yarn
 
-## Upcoming
-- Run dev server directly in Neutralino.js window (Vite.js must some how build on every change and then `neu listen`)
+# Update Neutralino binaries
+npx neu update
+
+# Customize your app
+# - Update `name` and `description` in `package.json`
+# - Update `applicationId`, `modes.window.title`, and `cli.binaryName` in `neutralino.config.json`
+# - Update `<title>` in `index.html`
+# - Replace `public/favicon.ico` and icons
+```
+
+## Development
+
+```bash
+# Start Vite dev server (port 8080)
+yarn dev
+
+# Build and run in Neutralino window
+yarn serve:neu
+```
+
+## Production Build
+
+```bash
+# TypeScript check + Vite build + Neutralino build
+yarn build
+```
+
+Your app binaries will be in the `dist/` folder.
+
+## Project Structure
+
+```
+├── src/                    # Source code
+│   ├── main.ts             # App entry point
+│   ├── App.vue             # Root component
+│   └── env.d.ts            # TypeScript declarations
+├── public/                 # Static assets
+├── index.html              # HTML entry
+├── vite.config.ts          # Vite configuration
+├── tsconfig.json           # TypeScript config
+├── neutralino.config.json  # Neutralino config
+└── package.json            # Package config
+```
+
+## Version Info
+
+- Vue 3.5.x
+- Vite 6.x
+- TypeScript 5.7
+- Neutralino 5.4.x

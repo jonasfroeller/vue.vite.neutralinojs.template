@@ -10,3 +10,6 @@ resources
 *.log
 /bin
 /dist
+
+# temporary files
+.tmp
