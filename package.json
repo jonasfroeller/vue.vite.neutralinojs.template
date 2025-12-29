@@ -5,7 +5,10 @@
   "description": "Starter template for Neutralino.js with Vite.js and Vue.js",
   "scripts": {
     "postinstall": "neu update",
+    "predev": "node -e \"require('fs').copyFileSync('neutralino.config.prod.json','neutralino.config.json')\"",
     "dev": "vite build && neu run",
+    "dev:hmr": "node scripts/dev-hmr.js",
+    "prebuild": "node -e \"require('fs').copyFileSync('neutralino.config.prod.json','neutralino.config.json')\"",
     "build": "vue-tsc -b && vite build && neu build --release",
     "preview": "vite preview"
   },
@@ -17,6 +20,7 @@
   },
   "devDependencies": {
     "@neutralinojs/neu": "^11.6.0",
+    "@types/node": "^25.0.3",
     "@vitejs/plugin-vue": "^6.0.3",
     "typescript": "~5.9.3",
     "vite": "^7.3.0",

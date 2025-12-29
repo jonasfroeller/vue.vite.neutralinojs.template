@@ -2,9 +2,9 @@
   "applicationId": "com.example.neuvitevue",
   "version": "2.0.0",
   "defaultMode": "window",
-  "port": 5173,
+  "port": 45678,
   "documentRoot": "/dist/",
-  "url": "/",
+  "url": "http://localhost:5173",
   "enableServer": true,
   "enableNativeAPI": true,
   "tokenSecurity": "one-time",
@@ -12,6 +12,7 @@
     "enabled": true,
     "writeToLogFile": false
   },
+  "exportAuthInfo": true,
   "nativeAllowList": [
     "app.*",
     "os.*",
@@ -20,7 +21,7 @@
   ],
   "modes": {
     "window": {
-      "title": "Vue NeutralinoJS Template",
+      "title": "Vue NeutralinoJS Template (Dev)",
       "width": 800,
       "height": 500,
       "minWidth": 400,
@@ -28,7 +29,7 @@
       "fullScreen": false,
       "alwaysOnTop": false,
       "icon": "/files/icons/icon.png",
-      "enableInspector": false,
+      "enableInspector": true,
       "borderless": false,
       "maximize": false,
       "exitProcessOnClose": true,

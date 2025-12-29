@@ -1,0 +1,49 @@
+{
+  "applicationId": "com.example.neuvitevue",
+  "version": "2.0.0",
+  "defaultMode": "window",
+  "port": 45678,
+  "documentRoot": "/dist/",
+  "url": "/",
+  "enableServer": true,
+  "enableNativeAPI": true,
+  "tokenSecurity": "one-time",
+  "logging": {
+    "enabled": true,
+    "writeToLogFile": false
+  },
+  "nativeAllowList": [
+    "app.*",
+    "os.*",
+    "debug.*",
+    "window.*"
+  ],
+  "modes": {
+    "window": {
+      "title": "Vue NeutralinoJS Template",
+      "width": 800,
+      "height": 500,
+      "minWidth": 400,
+      "minHeight": 250,
+      "fullScreen": false,
+      "alwaysOnTop": false,
+      "icon": "/files/icons/icon.png",
+      "enableInspector": false,
+      "borderless": false,
+      "maximize": false,
+      "exitProcessOnClose": true,
+      "hidden": false,
+      "resizable": true
+    },
+    "browser": {},
+    "cloud": {}
+  },
+  "cli": {
+    "binaryName": "vue-neutralinojs-template",
+    "resourcesPath": "/dist/",
+    "extensionsPath": "/extensions/",
+    "clientLibrary": "/dist/neutralino.js",
+    "binaryVersion": "6.4.0",
+    "clientVersion": "6.4.0"
+  }
+}

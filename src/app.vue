@@ -8,7 +8,7 @@ function showMessage() {
 
 <template>
   <div class="container">
-    <h1>Hello NeuVite ^_^</h1>
+    <h1>Hello, World!</h1>
     <button @click="showMessage">
       Show Message (Works only in Neu window)
     </button>
@@ -16,7 +16,8 @@ function showMessage() {
 </template>
 
 <style>
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }

@@ -36,7 +36,13 @@ npx neu update
 ## Development
 
 ```bash
-# Build and run in Neutralino window
+# Development with Hot Module Replacement (HMR)
+# - Starts Vite dev server + Neutralino window
+# - Fast updates without reloading
+yarn dev:hmr
+
+# Build and run in Neutralino window (no HMR)
+# - Simpler, closer to production behavior
 yarn dev
 ```
 

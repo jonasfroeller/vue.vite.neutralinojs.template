@@ -10,6 +10,7 @@ resources
 *.log
 /bin
 /dist
+neutralino.config.json
 
 # temporary files
 .tmp
